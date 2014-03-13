@@ -1,0 +1,320 @@
+body{
+	color: #777;
+	line-height: 1.6;
+	font-family:  Arial, 'simsun' sans-serif;
+}
+
+#doc{
+	padding-left: 160px;
+	left: 0;
+	position: relative;
+}
+
+#menu{
+	margin-left: -160px;
+	width: 160px;
+	position: fixed;
+	top: 0;
+	left: 160px;
+	bottom: 0;
+	z-index: 1000;
+	background: #5d565e;
+	overflow-y: auto;
+	font-size: 14px;
+}
+#menu ul{
+	margin-top: 40px;
+}	
+#menu li {
+	
+}
+#menu li a{
+	display: block;
+	color: #fff;
+	padding: 0 20px;
+	line-height: 40px;
+}
+#menu li a:hover{
+	background: #695f6b;
+}
+#main .hd,
+#main .bd {
+	width: 800px;
+	margin: 0 auto;
+}
+#main .hd{
+	text-align: center;
+	padding-top: 40px;
+	margin-bottom: 40px;
+}
+
+#main .hd h1{
+	font-weight: normal;
+	font-family: arial;
+}
+
+#main .lesure-hd h1{
+	font-size: 600% !important;
+	/*color: #38c4a9;*/	
+}
+
+#main .hd h1{
+	font-size: 350%;
+}
+
+#main .hd h2{
+	font-size: 150%;
+	font-weight: normal;
+	line-height: 1.5;
+	border-bottom: 1px solid #eee;
+	padding-bottom: 20px;
+}
+#main .bd {
+	padding-bottom: 40px;
+}
+#main .bd h3{
+	margin: 40px 0 15px;
+}
+
+#main .bd p{
+	margin-bottom: 15px;
+}
+
+/*===========code pretty==========*/
+code,
+pre {
+  padding: 0 3px 2px;
+  font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
+  font-size: 12px;
+  color: #333333;
+  -webkit-border-radius: 3px;
+     -moz-border-radius: 3px;
+          border-radius: 3px;
+}
+
+code {
+  padding: 2px 4px;
+  color: #d14;
+  white-space: nowrap;
+  background-color: #f7f7f9;
+  border: 1px solid #e1e1e8;
+}
+
+pre {
+  display: block;
+  padding: 9.5px;
+  margin: 20px 0 10px;
+  font-size: 13px;
+  line-height: 20px;
+  word-break: break-all;
+  word-wrap: break-word;
+  white-space: pre;
+  white-space: pre-wrap;
+  background-color: #fcfcfc;
+  border: 1px solid #f4f4f4;
+ 
+}
+
+pre.prettyprint {
+  margin-bottom: 20px;
+}
+
+pre code {
+  padding: 0;
+  color: inherit;
+  white-space: pre;
+  white-space: pre-wrap;
+  background-color: transparent;
+  border: 0;
+}
+
+.pre-scrollable {
+  max-height: 340px;
+  overflow-y: scroll;
+}
+.com { color: #93a1a1; }
+.lit { color: #195f91; }
+.pun, .opn, .clo { color: #93a1a1; }
+.fun { color: #dc322f; }
+.str, .atv { color: #D14; }
+.kwd, .prettyprint .tag { color: #1e347b; }
+.typ, .atn, .dec, .var { color: teal; }
+.pln { color: #48484c; }
+
+.prettyprint {
+  padding: 8px;
+/*  background-color: #f7f7f9;
+  border: 1px solid #e1e1e8;*/
+}
+.prettyprint.linenums {
+  -webkit-box-shadow: inset 40px 0 0 #fbfbfc, inset 41px 0 0 #ececf0;
+     -moz-box-shadow: inset 40px 0 0 #fbfbfc, inset 41px 0 0 #ececf0;
+          box-shadow: inset 40px 0 0 #fbfbfc, inset 41px 0 0 #ececf0;
+}
+
+/* Specify class=linenums on a pre to get line numbering */
+ol.linenums {
+  margin: 0 0 0 33px; /* IE indents via margin-left */
+}
+ol.linenums li {
+  padding-left: 12px;
+  color: #bebec5;
+  line-height: 20px;
+  text-shadow: 0 1px 0 #fff;
+}
+/*============base=============*/
+.lesure-form input, 
+.lesure-form select,
+.lesure-form textarea{
+	padding: 3px 4px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 1px 3px #ddd;
+    border-radius: 4px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.lesure-form input:focus, 
+.lesure-form select:focus,
+.lesure-form textarea:focus {
+	outline: 0;
+	outline: thin dotted \9; /* IE6-9 */
+	border-color: #129FEA;
+}
+
+
+/*=======table==========*/
+.lesure-table table{
+	border-collapse: collapse;
+	border-spacing: 0;
+	empty-cells: show;
+	border: 1px solid #ddd;
+	width: 100%;
+}
+
+.lesure-table th,
+.lesure-table td{
+	border: 1px solid #ddd;
+	padding: 7px 10px;
+}
+
+.lesure-table th{
+	background: #eee;
+	font-weight: bold;
+}
+
+/* nth-child selector for modern browsers */
+.lesure-table tr:nth-child(2n) td {
+    background-color: #f8f8f8;
+}
+
+/*:hover selector for modern browsers and IE7+*/
+.lesure-table tr:hover td{
+	background-color: #fffbdd; 	
+}
+
+.lesure-table-horizontal th, 
+.lesure-table-horizontal td{
+	border-left: 0 none;
+	border-right: 0 none;
+}
+
+.lesure-table-vertical th,
+.lesure-table-vertical td{
+	border-top: 0 none;
+	border-bottom: 0 none;
+}
+
+.lesure-table-nostripped tr:nth-child(2n) td{
+	background: transparent;
+}
+
+/*===========button==================*/
+.lesure-btn {
+    /* Structure */
+    display: inline-block;
+    *display: inline; /*IE 6/7*/
+    zoom: 1;
+    line-height: normal;
+    white-space: nowrap;
+    vertical-align: baseline;
+    text-align: center;
+    cursor: pointer;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-family: inherit;
+    font-size: 14px;
+    *font-size: 90%; /*IE 6/7 - To reduce IE's oversized button text*/
+    *overflow: visible; /*IE 6/7 - Because of IE's overly large left/right padding on buttons */
+    padding: 4px 12px;
+    line-height: 20px;
+    color: #666; 
+    border: 1px solid #dadada;  /*IE 6/7/8*/
+   /* border: none rgba(0, 0, 0, 0); */ /*IE9 + everything else*/
+    background-color: #e6e3e3;
+    text-decoration: none;
+    border-radius: 2px;
+}
+
+/* Firefox: Get rid of the inner focus border */
+.lesure-button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+.lesure-btn:hover{
+	background-color: #f4f3f3;
+	color: #444;
+}
+
+.primary-btn{
+	background-color: #4cb07c;
+	color: #fff;
+	border-color: #47a272;
+}
+
+.primary-btn:hover{
+	background-color: #55bc75;
+	color: #fff;
+	border-color: #47a272;
+}
+.xsmall-btn{
+	padding: 0 6px;
+	font-size: 12px;
+}
+.small-btn{
+	padding: 2px 10px;
+	font-size: 12px;
+}
+
+.large-btn{
+	padding: 11px 19px;
+}
+
+.blue-btn{
+	background-color: #52b2ef;
+	color: #fff;
+	border-color: #45a5e2;
+}
+
+.blue-btn:hover{
+	background-color: #5ebefb;
+	color: #fff;
+	border-color: #45a5e2;
+}
+.orange-btn{
+	background-color: #e25834;
+	color: #fff;
+	border-color: #d54e2b;
+}
+
+.orange-btn:hover{
+	background-color: #f76843;
+	color: #fff;
+	border-color: #d54e2b;
+}
