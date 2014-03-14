@@ -36,30 +36,81 @@
 				<h2>Simple CSS for HTML forms elments.</h2>
 			</div>
 			<div class="bd">
+				<h3>定制input[type=text]、select、textarea的大小</h3>
+				<p>要设置输入框，下拉框，文本域的大小，只需要给标签添加相应的class就行了。lesure定义了6套宽度，适应于它们。</p>
+				<p><code>.readonly</code>、<code>.disabled</code>依赖父容器<code>.lesure-from</code>其它样式无依赖</p>
 				<form class="lesure-form">
 					<ul>
-						<li>
-							<label></label>
-							<input type="text">
+						<li class="row">
+							<input type="text" placeholder="normal" >
 						</li>
-						<li>
-							<label>
-								<input type="checkbox">Remember me
-							</label>
+						<li class="row">
+							<input type="text" placeholder=".readonly" readonly="readonly" class="readonly" >
+							<code>.readonly</code>
 						</li>
-						<li>
-							<label>
-								<input type="radio">item one 
-							</label>
-							<label>
-								<input type="radio">item two
-							</label>
+						<li class="row">
+							<input type="text" placeholder=".disabled" disabled="disabled" class="disabled" >
+							<code>.disabled</code>
 						</li>
-						<li>
-							<select><option>select</option></select>
+						<li class="row">
+							<input type="text" placeholder=".lesure-xxs" class="lesure-xxs">
+							<code>.lesure-xxs</code>
 						</li>
-						<li>
+						<li class="row">
+							<input type="text" placeholder=".lesure-xs" class="lesure-xs">
+							<code>.lesure-xs</code>
+						</li>
+						<li class="row">
+							<input type="text" placeholder=".lesure-s" class="lesure-s">
+							<code>.lesure-s</code>
+						</li>
+						<li class="row">
+							<input type="text" placeholder=".lesure-l" class="lesure-l">
+							<code>.lesure-l</code>
+						</li>
+						<li class="row">
+							<input type="text" placeholder=".lesure-xl" class="lesure-xl">
+							<code>.lesure-xl</code>
+						</li>
+						<li class="row">
+							<input type="text" placeholder=".lesure-xxl" class="lesure-xxl">
+							<code>.lesure-xxl</code>
+						</li>
+						<li class="row">
+							<select class="lesure-xxl"><option>xxl select</option></select>
+							<code>.lesure-xxl</code>
+						</li>
+						<li class="row">
+							<select><option>normal select</option></select>
+						</li>
+						<li class="row">
+							<select class="disabled" disabled="disabled"><option>disabled select</option></select>
+						</li>
+						<li class="row">
 							<textarea name=""  cols="30" rows="10"></textarea>
+						</li>
+					</ul>
+				</form>
+
+				<h3>checkbox 和 radio</h3>
+				<p>对包含checkbox,radio的<code>&lt;label&gt;</code>添加<code>lesure-checkbox</code>、<code>lesure-radio</code>即可checkbox,radio之间的间距</p>
+				<form class="lesure-form">
+					<ul>
+						<li class="row">
+							<label class="lesure-checkbox">
+								<input type="checkbox">记住我
+							</label>
+							<label class="lesure-checkbox">
+								<input type="checkbox">记住我
+							</label>
+						</li>
+						<li class="row">
+							<label class="lesure-radio">
+								<input type="radio" name="lesure_radio">选项一 
+							</label>
+							<label class="lesure-radio">
+								<input type="radio" name="lesure_radio">选项二
+							</label>
 						</li>
 					</ul>
 				</form>

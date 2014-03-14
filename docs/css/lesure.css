@@ -170,7 +170,7 @@ ol.linenums li {
     display: inline-block;
     border: 1px solid #ccc;
     box-shadow: inset 0 1px 3px #ddd;
-    border-radius: 4px;
+    border-radius: 2px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -184,7 +184,49 @@ ol.linenums li {
 	border-color: #129FEA;
 }
 
+.lesure-checkbox,
+.lesure-radio{
+	margin-right: 20px;
+}
 
+.lesure-checkbox input,
+.lesure-radio input{
+	margin-right: 3px;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+.lesure-form .disabled{
+	background: #eaeded;
+	color: #a9a9a9;
+}
+
+.lesure-form .readonly{
+	background: #f8f8f8;
+}
+
+.lesure-form .row{
+	margin-bottom: 15px;
+}
+
+.lesure-xxs{
+	width: 60px;
+}
+.lesure-xs{
+	width: 90px;
+}
+.lesure-s{
+	width: 150px;
+}
+.lesure-l{
+	width: 210px;
+}
+.lesure-xl{
+	width: 270px;
+}
+.lesure-xxl{
+	width: 530px;
+}
 /*=======table==========*/
 .lesure-table table{
 	border-collapse: collapse;
@@ -317,4 +359,64 @@ ol.linenums li {
 	background-color: #f76843;
 	color: #fff;
 	border-color: #d54e2b;
+}
+
+/*=============menu=============*/
+.lesure-menu a{
+	color: inherit;
+	-webkit-transition: opacity .2s ease,background .2s ease,-webkit-box-shadow .2s ease;
+	transition: opacity .2s ease,background .2s ease,box-shadow .2s ease;
+}
+.lesure-menu li a{
+	display: block;
+	padding: 10px 15px;
+}
+.lesure-menu li a.selected,
+.lesure-menu li a:hover{
+	background: #f8f8f8;
+}
+
+.lesure-menu-horizontal li{
+	display: inline-block;
+	*display: inline;
+	*zoom:1;
+	vertical-align: middle;
+}
+
+.lesure-menu-vertical {
+	width: 220px;
+	-webkit-box-shadow: 0 0 0 1px rgba(0,0,0,.1);
+	box-shadow: 0 0 0 1px rgba(0,0,0,.1);
+	line-height: 1;
+}
+.lesure-menu-vertical a{
+	color: inherit;
+	-webkit-transition: opacity .2s ease,background .2s ease,-webkit-box-shadow .2s ease;
+	transition: opacity .2s ease,background .2s ease,box-shadow .2s ease;
+}
+.lesure-menu-vertical dt {
+	font-weight: bold;
+	padding: 12px 15px;
+	background-color: #f4f4f4;
+	border-top: 1px solid #f0f0f0;
+}
+.lesure-menu-vertical dd{
+	border-top: 1px solid #f0f0f0;
+}
+.lesure-menu-vertical dd a,
+.lesure-menu-vertical .sub-header{
+	display: block;
+	padding: 10px 15px;
+}
+.lesure-menu-vertical dd a:hover,
+.lesure-menu-vertical dd a.selected{
+	background: #f8f8f8;
+}
+.lesure-menu-vertical .third-menu{
+	margin-top: -5px;
+	padding-bottom: 10px;
+}
+.lesure-menu-vertical .third-menu a{
+	padding: 8px 27px;
+	font-size: 14px;
 }

@@ -32,37 +32,73 @@
 		</div>
 		<div id="main">
 			<div class="hd">
-				<h1>Base</h1>
-				<h2>Simple CSS for HTML forms elments.</h2>
+				<h1>Menus</h1>
+				<h2>Simple CSS for Menus.</h2>
 			</div>
 			<div class="bd">
-				<form class="lesure-form">
+				<h3>简单菜单</h3>
+				<p>lesure ui 的默认菜单，只需要添加<code>lesure-menu</code>即可</p>
+				<div class="lesure-menu">
 					<ul>
 						<li>
-							<label></label>
-							<input type="text">
+							<a href="">item1</a>
 						</li>
 						<li>
-							<label>
-								<input type="checkbox">Remember me
-							</label>
+							<a href="">item2</a>
 						</li>
 						<li>
-							<label>
-								<input type="radio">item one 
-							</label>
-							<label>
-								<input type="radio">item two
-							</label>
+							<a href="">item3</a>
 						</li>
 						<li>
-							<select><option>select</option></select>
-						</li>
-						<li>
-							<textarea name=""  cols="30" rows="10"></textarea>
+							<a href="">item4</a>
 						</li>
 					</ul>
-				</form>
+				</div>
+				
+				<h3>简单横向菜单</h3>
+				<p>需要添加<code>lesure-menu</code>和<code>lesure-menu-horizontal</code>即可</p>
+				<div class="lesure-menu lesure-menu-horizontal">
+					<ul>
+						<li>
+							<a href="">item1</a>
+						</li>
+						<li>
+							<a href="">item2</a>
+						</li>
+						<li>
+							<a href="">item3</a>
+						</li>
+						<li>
+							<a href="">item4</a>
+						</li>
+					</ul>
+				</div>
+
+				<h3>级联竖向菜单</h3>
+				<p>级联竖向菜单，只需要添加<code>lesure-menu-vertical</code>样式就可以。如果需要三级菜单则增加<code>sub-header</code>和<code>third-menu</code>样式。</p>
+				<div class="lesure-menu-vertical">
+					<dl>
+						<dt>Main item1</dt>
+						<dd><a href="#">sub item1</a></dd>
+						<dd><a href="#">sub item2</a></dd>
+						<dd><a href="#">sub item3</a></dd>
+						<dt>Main item2</dt>
+						<dd>
+							<div class="sub-header">sub item 1</div>
+							<ul class="third-menu">
+								<li><a href="#">third item1</a></li>
+								<li><a href="#">third item2</a></li>
+								<li><a href="#">third item3</a></li>
+							</ul>
+						</dd>
+						<dd><a href="#">sub item2</a></dd>
+						<dd><a href="#">sub item3</a></dd>
+						<dt>Main item3</dt>
+						<dd><a href="#">sub item2</a></dd>
+						<dd><a href="#">sub item3</a></dd>
+					</dl>
+				</div>
+
 			</div>
 			<div class="ft">
 				
