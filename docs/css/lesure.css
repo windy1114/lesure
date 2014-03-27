@@ -53,7 +53,7 @@ body{
 	font-family: arial;
 }
 
-#main .lesure-hd h1{
+#main .cafe-hd h1{
 	font-size: 600% !important;
 	/*color: #38c4a9;*/	
 }
@@ -163,9 +163,9 @@ ol.linenums li {
   text-shadow: 0 1px 0 #fff;
 }
 /*============base=============*/
-.lesure-form input, 
-.lesure-form select,
-.lesure-form textarea{
+.cafe-form input, 
+.cafe-form select,
+.cafe-form textarea{
 	padding: 3px 4px;
     display: inline-block;
     border: 1px solid #ccc;
@@ -176,59 +176,95 @@ ol.linenums li {
     box-sizing: border-box;
 }
 
-.lesure-form input:focus, 
-.lesure-form select:focus,
-.lesure-form textarea:focus {
+.cafe-form input[type="radio"],
+.cafe-form input[type="checkbox"] {
+	box-shadow: none;
+}
+
+.cafe-form input:focus, 
+.cafe-form select:focus,
+.cafe-form textarea:focus {
 	outline: 0;
 	outline: thin dotted \9; /* IE6-9 */
 	border-color: #129FEA;
 }
 
-.lesure-checkbox,
-.lesure-radio{
+.cafe-checkbox,
+.cafe-radio{
 	margin-right: 20px;
 }
 
-.lesure-checkbox input,
-.lesure-radio input{
+.cafe-checkbox input,
+.cafe-radio input{
 	margin-right: 3px;
 	-webkit-box-shadow: none;
 	box-shadow: none;
 }
 
-.lesure-form .disabled{
+.cafe-form .disabled{
 	background: #eaeded;
 	color: #a9a9a9;
 }
 
-.lesure-form .readonly{
+.cafe-form .readonly{
 	background: #f8f8f8;
 }
 
-.lesure-form .row{
+.cafe-row{
 	margin-bottom: 15px;
 }
 
-.lesure-xxs{
+
+.cafe-form label,
+.cafe-col{
+	display: inline-block;
+	*display: inline;
+	*zoom:1;
+}
+
+.cafe-col {
+	margin-right: 20px;
+}
+
+.cafe-col label,
+.cafe-lbl{
+	text-align: right;
+	width: 120px;
+	margin-right: 5px;
+}
+
+.cafe-col .cafe-ctrl-lbl{
+	width: auto;
+	margin-right: 20px;
+}
+.cafe-col-control{
+	padding-left: 125px;
+}
+
+.cafe-split-xs{
+	margin: auto 8px;
+}
+
+.cafe-xxs{
 	width: 60px;
 }
-.lesure-xs{
+.cafe-xs{
 	width: 90px;
 }
-.lesure-s{
+.cafe-s{
 	width: 150px;
 }
-.lesure-l{
+.cafe-l{
 	width: 210px;
 }
-.lesure-xl{
+.cafe-xl{
 	width: 270px;
 }
-.lesure-xxl{
+.cafe-xxl{
 	width: 530px;
 }
 /*=======table==========*/
-.lesure-table table{
+.cafe-table table{
 	border-collapse: collapse;
 	border-spacing: 0;
 	empty-cells: show;
@@ -236,45 +272,45 @@ ol.linenums li {
 	width: 100%;
 }
 
-.lesure-table th,
-.lesure-table td{
+.cafe-table th,
+.cafe-table td{
 	border: 1px solid #ddd;
 	padding: 7px 10px;
 }
 
-.lesure-table th{
+.cafe-table th{
 	background: #eee;
 	font-weight: bold;
 }
 
 /* nth-child selector for modern browsers */
-.lesure-table tr:nth-child(2n) td {
+.cafe-table tr:nth-child(2n) td {
     background-color: #f8f8f8;
 }
 
 /*:hover selector for modern browsers and IE7+*/
-.lesure-table tr:hover td{
+.cafe-table tr:hover td{
 	background-color: #fffbdd; 	
 }
 
-.lesure-table-horizontal th, 
-.lesure-table-horizontal td{
+.cafe-table-horizontal th, 
+.cafe-table-horizontal td{
 	border-left: 0 none;
 	border-right: 0 none;
 }
 
-.lesure-table-vertical th,
-.lesure-table-vertical td{
+.cafe-table-vertical th,
+.cafe-table-vertical td{
 	border-top: 0 none;
 	border-bottom: 0 none;
 }
 
-.lesure-table-nostripped tr:nth-child(2n) td{
+.cafe-table-nostripped tr:nth-child(2n) td{
 	background: transparent;
 }
 
 /*===========button==================*/
-.lesure-btn {
+.cafe-btn {
     /* Structure */
     display: inline-block;
     *display: inline; /*IE 6/7*/
@@ -293,7 +329,7 @@ ol.linenums li {
     font-size: 14px;
     *font-size: 90%; /*IE 6/7 - To reduce IE's oversized button text*/
     *overflow: visible; /*IE 6/7 - Because of IE's overly large left/right padding on buttons */
-    padding: 4px 12px;
+    padding: 4px 20px;
     line-height: 20px;
     color: #666; 
     border: 1px solid #dadada;  /*IE 6/7/8*/
@@ -304,12 +340,12 @@ ol.linenums li {
 }
 
 /* Firefox: Get rid of the inner focus border */
-.lesure-button::-moz-focus-inner {
+.cafe-button::-moz-focus-inner {
     padding: 0;
     border: 0;
 }
 
-.lesure-btn:hover{
+.cafe-btn:hover{
 	background-color: #f4f3f3;
 	color: #444;
 }
@@ -362,61 +398,61 @@ ol.linenums li {
 }
 
 /*=============menu=============*/
-.lesure-menu a{
+.cafe-menu a{
 	color: inherit;
 	-webkit-transition: opacity .2s ease,background .2s ease,-webkit-box-shadow .2s ease;
 	transition: opacity .2s ease,background .2s ease,box-shadow .2s ease;
 }
-.lesure-menu li a{
+.cafe-menu li a{
 	display: block;
 	padding: 10px 15px;
 }
-.lesure-menu li a.selected,
-.lesure-menu li a:hover{
+.cafe-menu li a.selected,
+.cafe-menu li a:hover{
 	background: #f8f8f8;
 }
 
-.lesure-menu-horizontal li{
+.cafe-menu-horizontal li{
 	display: inline-block;
 	*display: inline;
 	*zoom:1;
 	vertical-align: middle;
 }
 
-.lesure-menu-vertical {
+.cafe-menu-vertical {
 	width: 220px;
 	-webkit-box-shadow: 0 0 0 1px rgba(0,0,0,.1);
 	box-shadow: 0 0 0 1px rgba(0,0,0,.1);
 	line-height: 1;
 }
-.lesure-menu-vertical a{
+.cafe-menu-vertical a{
 	color: inherit;
 	-webkit-transition: opacity .2s ease,background .2s ease,-webkit-box-shadow .2s ease;
 	transition: opacity .2s ease,background .2s ease,box-shadow .2s ease;
 }
-.lesure-menu-vertical dt {
+.cafe-menu-vertical dt {
 	font-weight: bold;
 	padding: 12px 15px;
 	background-color: #f4f4f4;
 	border-top: 1px solid #f0f0f0;
 }
-.lesure-menu-vertical dd{
+.cafe-menu-vertical dd{
 	border-top: 1px solid #f0f0f0;
 }
-.lesure-menu-vertical dd a,
-.lesure-menu-vertical .sub-header{
+.cafe-menu-vertical dd a,
+.cafe-menu-vertical .sub-header{
 	display: block;
 	padding: 10px 15px;
 }
-.lesure-menu-vertical dd a:hover,
-.lesure-menu-vertical dd a.selected{
+.cafe-menu-vertical dd a:hover,
+.cafe-menu-vertical dd a.selected{
 	background: #f8f8f8;
 }
-.lesure-menu-vertical .third-menu{
+.cafe-menu-vertical .third-menu{
 	margin-top: -5px;
 	padding-bottom: 10px;
 }
-.lesure-menu-vertical .third-menu a{
+.cafe-menu-vertical .third-menu a{
 	padding: 8px 27px;
 	font-size: 14px;
 }

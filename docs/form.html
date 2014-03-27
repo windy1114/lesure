@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Lesure</title>
+	<title>CoffeeUi</title>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/lesure.css">
 </head>
@@ -36,7 +36,131 @@
 				<h2>Simple CSS for HTML forms.</h2>
 			</div>
 			<div class="bd">
-				
+				<h3>横排显示的表单</h3>
+				<form action="" class="cafe-form">
+					<div class="cafe-row">
+						<div class="cafe-col">
+							<label>公司名称：</label>
+							<input type="text" class="cafe-l">
+						</div>
+						<div class="cafe-col">
+							<label>公司网址：</label>
+							<input type="text" class="cafe-l">
+						</div>
+					</div>
+					<div class="cafe-row">
+						<div class="cafe-col">
+							<label>订单编号：</label>
+							<input type="text" class="cafe-l">
+						</div>
+						<div class="cafe-col">
+							<label>订单金额：</label>
+							<input type="text" class="cafe-xs">
+							<span class="cafe-split-xs">-</span>
+							<input type="text" class="cafe-xs">
+						</div>
+					</div>
+					<div class="cafe-row">
+						<div class="cafe-col">
+							<label>订单状态：</label>
+							<select name="" class="cafe-l">
+								<option value="">全部</option>
+							</select>
+						</div>
+						<div class="cafe-col">
+							<label>合同状态：</label>
+							<input type="text" class="cafe-l" >
+						</div>
+					</div>
+					<!-- <div class="cafe-row">
+						<div class="cafe-col">
+							<label>查询条件：</label>
+							<select class="cafe-s">
+								<option value="">广告主名称</option>
+							</select>
+							<input type="text" class="cafe-l">
+						</div>
+					</div> -->
+					<!-- <div class="cafe-row">
+						<div class="cafe-col">
+							<label>行业：</label>
+							<select class="cafe-s">
+								<option value="">一级行业</option>
+							</select>
+							<select class="cafe-s">
+								<option value="">二级行业</option>
+							</select>
+						</div>
+					</div> -->
+					<div class="cafe-row">
+						<div class="cafe-col">
+							<label>网络推广历史：</label>
+							<label class="cafe-ctrl-lbl">
+								<input type="checkbox" name="">
+								百度	
+							</label>
+							<label class="cafe-ctrl-lbl">
+								<input type="checkbox" name="">
+								谷歌
+							</label>
+							<label class="cafe-ctrl-lbl">
+								<input type="checkbox" name="">
+								淘宝直通车
+							</label>
+							<label class="cafe-ctrl-lbl">
+								<input type="checkbox" name="">
+								搜索直通车
+							</label>
+						</div>
+					</div>
+					<div class="cafe-row">
+						<div class="cafe-col">
+							<label>性别：</label>
+							<label class="cafe-ctrl-lbl">
+								<input type="radio" name="">
+								男	
+							</label>
+							<label class="cafe-ctrl-lbl">
+								<input type="radio" name="">
+								女
+							</label>
+							<label class="cafe-ctrl-lbl">
+								<input type="radio" name="">
+								未知
+							</label>
+						</div>
+					</div>
+					<div class="cafe-row">
+						<div class="cafe-col-control">
+							<a href="#" class="cafe-btn primary-btn">提交</a>
+						</div>
+					</div>
+				</form>
+
+				<h3>竖排显示的表单</h3>
+				<form action="" class="cafe-form">
+					<div class="cafe-row">
+						<label class="cafe-lbl">公司名称：</label>
+						<input type="text" class="cafe-l">
+					</div>
+					<div class="cafe-row">
+						<label class="cafe-lbl">订单金额：</label>
+						<input type="text" class="cafe-xs">
+						<span class="cafe-split-xs">-</span>
+						<input type="text" class="cafe-xs">
+					</div>
+					<div class="cafe-row">
+						<label class="cafe-lbl">状态：</label>
+						<select class="cafe-xs">
+							<option value="">全部</option>
+						</select>
+					</div>
+					<div class="cafe-row">
+						<div class="cafe-col-control">
+							<a href="#" class="cafe-btn primary-btn">提交</a>
+						</div>
+					</div>
+				</form>
 			</div>
 			<div class="ft">
 				
