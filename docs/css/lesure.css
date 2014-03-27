@@ -169,17 +169,17 @@ ol.linenums li {
 	padding: 3px 4px;
     display: inline-block;
     border: 1px solid #ccc;
-    box-shadow: inset 0 1px 3px #ddd;
-    border-radius: 2px;
+    /*box-shadow: inset 0 1px 3px #ddd;
+    border-radius: 2px;*/
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 
-.cafe-form input[type="radio"],
+/*.cafe-form input[type="radio"],
 .cafe-form input[type="checkbox"] {
 	box-shadow: none;
-}
+}*/
 
 .cafe-form input:focus, 
 .cafe-form select:focus,
@@ -336,7 +336,7 @@ ol.linenums li {
    /* border: none rgba(0, 0, 0, 0); */ /*IE9 + everything else*/
     background-color: #e6e3e3;
     text-decoration: none;
-    border-radius: 2px;
+   /* border-radius: 2px;*/
 }
 
 /* Firefox: Get rid of the inner focus border */
